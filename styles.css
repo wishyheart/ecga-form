@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#warning {
+  color: red;
+}
+i {
+  color: #37474F;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  background: #014421;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.container form {
+  padding: 40px;
+  margin: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 50px;
+  background-image: url(https://lh6.googleusercontent.com/_y7nnL5sg9GjwVFDi8Qzi04MDovQWtKJHYbEXhw_vD6-_IuPvmWDVqgrQzv4eLBYZPjRg7nxVAm94UkcCoW7naf8c_X0MQMZKT8NpH1MuPFs06kjJxhlRNm5-5eUTD-UrndghkvGxOeapyQ9AwBD8X4m9bwovnAugvxRfOWKOEF49VJa_YxYUIqRxpSfkOtf);
+}
+nav li {
+  float: right;
+}
+nav li a {
+  display: flex;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  text-decoration: none;
+  width: 100%;
+  font-size: 15px;
+}
+nav li a:hover{
+	color: #1d8348;
+}
+.patient-id {
+	text-align: right;
+}
+#id {
+	border: 1px solid #B0BEC5;
+}
+.component-details label {
+	font-size: 14px;
+	font-weight: 500;
+  width: 13%;
+}
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.step .fields{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.step .fields .input-field{
+  display: flex;
+  width: calc(100% / 2 - 50px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+.step .fields .input-field input[type=text], input[type=date], input[type=time], input[type=tel], select{
+  background: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #BDBDBD;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+.step .field .input{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.address-details, .contact-details {
+	margin-top: 2rem;
+	font-size: 16px;
+	font-weight: 700;
+}
+.input li {
+  list-style-type: none;
+  font-size: 16px;
+}
+.input label {
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+}
+.field .input span {
+  margin-left: 2.2rem ;
+}
+.field .input p {
+  margin-left: 1.25rem;
+  margin-right: 3rem;
+  font-size: 14px;
+}
+.field .input input[type=number] {
+	border: none;
+	border-bottom: 1px solid black;
+	margin-left: 0.3rem;
+}
+.container form .buttons {
+  text-align: center;
+}
+.container form button {
+  justify-content: center;
+  height: 45px;
+  max-width: 170px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 15px; 
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.container form .buttons .save-btn {
+  background: #ffeb2f;
+}
+.container form .buttons .save-btn:hover{
+  background: #FFEE58;
+}
+.container form .buttons .next-btn, .submit-btn {
+  background: #014421;
+}
+.container form .buttons .next-btn, .submit-btn:hover {
+	background: #1d8348;
+}
+.container form .buttons .previous-btn {
+  background: #7b1113;
+}
+.container form .buttons .previous-btn:hover {
+  background: #b03a2e;
+}
+#add-btn {
+  cursor: pointer;
+}
+.step input[type=radio],
+input[type=checkbox] {
+  margin: 0.3rem 0.3rem 0.5rem 1rem;
+}
+#text-area, #height, #weight{
+  border: none;
+  border-bottom: 1px solid #546E7A;
+  margin-left: 0.3rem;
+  outline: none;
+  font-size: 15px;
+  padding-left: 0.2rem;
+  text-align: center;
+}
+#section {
+  margin-left: 1rem;
+  font-size: 16px;
+}
+#subsection {
+  margin-left: 2.2rem;
+}
+#additional-section {
+  margin-left: 3.2rem;
+}
+#table-column {
+  list-style: none;
+  margin-left: 3rem;
+  text-align: center;
+}
+#column, #grid-column th {
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  background: none;
+  color: black;
+}
+#column td {
+  text-align: center;
+  font-size: 15px;
+}
+#column td:first-child {
+  text-align: left;
+  margin-left: 2rem;
+}
+.hidden-radio {
+  display: flex;
+}
+#input-number,
+#input-add-exercise, #remarks{
+  border: none;
+  border-bottom: 1px solid #546E7A;
+  width: 70%;
+  margin-left: 0.5rem;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+#input-text {
+  border: none;
+  border-bottom: 1px solid #546E7A;
+  width: 20%;
+  margin: 0.3rem;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+#heightunits, #weightunits {
+  border: none;
+}
+#bmi-submit-btn {
+  background: maroon;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  width: 20%;
+  text-align: center;  
+}
+#image-input {
+  margin-left: 2rem;
+}
+#display-image{
+  width: 400px;
+  height: 225px;
+  border: 1px solid #9E9E9E;
+  background-position: center;
+  background-size: cover;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+#comment {
+  border: none;
+  margin-left: 0.5rem;
+  border-bottom: 1px solid black;
+  width: 100%;
+  outline: none;
+}
+#demo {
+    font-weight: 700;
+    font-size: 15px;
+}
+.hide {
+	display: none;
+}
+.scale {
+  width: 40%;
+  text-align: center;
+  margin-left: 1rem;
+}
+.slider {
+  width: 90%;
+  height: 10px;
+  background: linear-gradient(to right, red, yellow, green);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 25px;
+  background: black;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.footer {
+  clear: both;
+  margin-top: 60px;
+  height: 10rem;
+}
+.footer .left-side {
+  text-align:left;
+  float:left;
+}
+.footer .right-side {
+  float:right;
+  text-align:right;
+}
+.footer input[type=date] {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    margin: 0.5rem;
+}
